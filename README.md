@@ -3,10 +3,10 @@ page_type: sample
 languages:
 - java
 products:
-- Azure
-- Azure CosmosDB
-description: "A reference Java Spring-boot app showing CosmosDB pagination with Spring-data PagingSortingRepository"
-urlFragment: "https://github.com/Azure-Samples/azure-cosmosdb-springboot-pagination.git"
+- azure
+- azure-cosmos-db
+description: "A reference Java Spring-boot app showing CosmosDB pagination with Spring-data PagingSortingRepository."
+urlFragment: "azure-cosmosdb-springboot-pagination"
 ---
 
 
@@ -18,7 +18,6 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-Give a short description for your sample here. What does it do and why is it important?
 
 ## Contents
 
