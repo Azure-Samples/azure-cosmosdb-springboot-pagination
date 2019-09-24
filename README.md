@@ -39,10 +39,12 @@ Outline the required components and tools that a user might need to have on thei
 
 ## Setup
 
+```bash
 git clone https://github.com/Azure-Samples/azure-cosmosdb-springboot-pagination.git</br>  
 cd azure-cosmosdb-springboot-pagination </br>  
 mvn clean install </br>  
 mvn spring-boot:run </br>  
+```
 
 ## Running the sample
 
