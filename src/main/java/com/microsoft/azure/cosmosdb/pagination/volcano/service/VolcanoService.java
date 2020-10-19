@@ -1,8 +1,8 @@
 package com.microsoft.azure.cosmosdb.pagination.volcano.service;
 
+import com.azure.spring.data.cosmos.core.query.CosmosPageRequest;
 import com.microsoft.azure.cosmosdb.pagination.volcano.model.Volcano;
 import com.microsoft.azure.cosmosdb.pagination.volcano.repository.VolcanoRepository;
-import com.microsoft.azure.spring.data.cosmosdb.core.query.DocumentDbPageRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -19,7 +19,7 @@ public class VolcanoService {
 
 
     public List<Volcano> getAllVolcanoesByPage(Integer pageNo, Integer pageSize, String sortBy) {
-        final Pageable pageable = new DocumentDbPageRequest(0, pageSize, null);
+        final Pageable pageable = new CosmosPageRequest(0, pageSize, null);
         List<Volcano> content = null;
 
         Page<Volcano> page = this.repository.findAll(pageable);
