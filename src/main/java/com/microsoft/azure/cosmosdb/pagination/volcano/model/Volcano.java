@@ -1,8 +1,9 @@
 package com.microsoft.azure.cosmosdb.pagination.volcano.model;
 
+import com.azure.spring.data.cosmos.core.mapping.Container;
+import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
 import com.microsoft.azure.cosmosdb.pagination.Constants;
-import com.microsoft.azure.spring.data.cosmosdb.core.mapping.Document;
-import com.microsoft.azure.spring.data.cosmosdb.core.mapping.PartitionKey;
+
 import lombok.*;
 import org.springframework.data.annotation.Id;
 
@@ -12,7 +13,7 @@ import org.springframework.data.annotation.Id;
 @Getter
 @Setter
 @Data
-@Document(collection = Constants.DEFAULT_VOLCANO_COLLECTION_NAME)
+@Container(containerName  = Constants.DEFAULT_VOLCANO_CONTAINER_NAME)
 
 public class Volcano {
 
